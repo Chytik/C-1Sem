@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88FA7270-A224-4EF7-B568-DC19197DAE7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Лаба_8._3_осознано</RootNamespace>
+    <AssemblyName>Лаба 8.3 осознано</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Avtor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Avtor.Designer.cs">
+      <DependentUpon>Avtor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Masivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Masivi.Designer.cs">
+      <DependentUpon>Masivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Massivvi.cs" />
+    <Compile Include="Perevod.cs" />
+    <Compile Include="Primer.cs" />
+    <Compile Include="PrimerPr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PrimerPr.Designer.cs">
+      <DependentUpon>PrimerPr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Strings.Designer.cs">
+      <DependentUpon>Strings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tictactoe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tictactoe.Designer.cs">
+      <DependentUpon>tictactoe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vyhod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vyhod.Designer.cs">
+      <DependentUpon>Vyhod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VyhodDa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VyhodDa.Designer.cs">
+      <DependentUpon>VyhodDa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VyhodNet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VyhodNet.Designer.cs">
+      <DependentUpon>VyhodNet.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Avtor.resx">
+      <DependentUpon>Avtor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Masivi.resx">
+      <DependentUpon>Masivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PrimerPr.resx">
+      <DependentUpon>PrimerPr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Strings.resx">
+      <DependentUpon>Strings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tictactoe.resx">
+      <DependentUpon>tictactoe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vyhod.resx">
+      <DependentUpon>Vyhod.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VyhodDa.resx">
+      <DependentUpon>VyhodDa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VyhodNet.resx">
+      <DependentUpon>VyhodNet.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
